@@ -1,16 +1,18 @@
-function sum (x: number, y: number): number {
-    const result = x + y
-    console.log("Resultado = " + result)
+// undefined
+let value: number
+value = 12
+console.log(value)
 
-    return result
+let user = {
+  name: "Leo"
 }
 
-const result = sum(7, 3)
+//console.log(user.email)
 
-const showMessage = (name: string): string => {
-    const message = "Olá " + name
+// null
+let email = null
+console.log(email)
 
-    return message
+if(!email){
+  console.log("Informe o e-mail!")
 }
-
-showMessage ("Leonardo de Proença")
