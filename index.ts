@@ -1,17 +1,6 @@
-// String para texto
-let username: string
+// Tipagem explícita
+let myName: string
 
-username = "Ana"
-// username = 17
-// username = true
-
-
-// Number para número
-let total: number
-total = 3
-total = 7.5
-
-// Boolean para verdadeiro ou falso
-let isLoading: boolean
-isLoading = true
-isLoading = false
+// Inferência de Tipos
+let message = "Oi, tudo bem?"
+message = "Sim. Tudo ótimo!"
