@@ -1,6 +1,16 @@
-// Tipagem explicita ou Anotação de tipo (Type Annotation)
-let names: string[] = ["Leonardo", "Ana"]
-let numbers: number[] = [1, 2, 3, 4]
+function sum (x: number, y: number): number {
+    const result = x + y
+    console.log("Resultado = " + result)
 
-// Inferência de tipo.
-let products = ["Product x", "Product y", "Product z"]
+    return result
+}
+
+const result = sum(7, 3)
+
+const showMessage = (name: string): string => {
+    const message = "Olá " + name
+
+    return message
+}
+
+showMessage ("Leonardo de Proença")
