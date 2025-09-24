@@ -1,22 +1,17 @@
-// const message = "Hello, Typescript!!"
-let message = "Hello, Typescript!!"
+// String para texto
+let username: string
 
-function showMessage() {
-  console.log(message)
-}
+username = "Ana"
+// username = 17
+// username = true
 
-// Consigo mudar?
-message = "Typescript!"
 
-// Consigo executa?
-// message()
-showMessage()
+// Number para número
+let total: number
+total = 3
+total = 7.5
 
-const user = {
-  name: "Leonardo",
-  email: "Leonardo@email.com"
-}
-
-// Propriedade existe?
-//console.log(user.avatar)
-console.log(user.name)
+// Boolean para verdadeiro ou falso
+let isLoading: boolean
+isLoading = true
+isLoading = false
