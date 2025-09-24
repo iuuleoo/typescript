@@ -1,6 +1,10 @@
-let response: string | null | number
+interface Product {
+  id: number,
+  name: string
+}
 
-response = "Teste"
-response = null
-response = 15
+function newProduct(product: Product) {
+   
+}
 
+newProduct({ id: 1, name: "Produto x"})
