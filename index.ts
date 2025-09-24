@@ -1,10 +1,8 @@
-interface Product {
-    id: number
-    name: string
-    quantity: number
+enum Profile {
+    Admin = 1,
+    Client = 2,
+    Seller = 3
 }
 
-
-const product1: Product = { id: 1, name: "Produto 1", quantity: 3}
-
-const product2: typeof product1 = { id: 2, name: "Produto 2", quantity: 5}
+let profile: number = Profile.Admin
+console.log(Profile.Seller)
