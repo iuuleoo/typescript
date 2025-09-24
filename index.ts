@@ -1,16 +1,15 @@
-type Product = {
+type Person = {
     id: number,
     name: string
 }
 
-function newProduct(product: Product){
+type Teacher = Person & {
+    subjects: string[]
 }
 
-newProduct({ id: 1, name: "Produto x"})
-
-
-type SelectResponse = Product[] | null
-
-function selectProducts(): SelectResponse {
-    return null
+type Student = Person & {
+    age: number
 }
+
+let teacher: Teacher
+let student: Student
