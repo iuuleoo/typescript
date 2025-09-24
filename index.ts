@@ -1,6 +1,6 @@
-let message
+// Tipagem explicita ou Anotação de tipo (Type Annotation)
+let names: string[] = ["Leonardo", "Ana"]
+let numbers: number[] = [1, 2, 3, 4]
 
-// Com o tipo any a variável aceita qualquer valor.
-message = "Esse é um texto"
-message = 45
-message = true
+// Inferência de tipo.
+let products = ["Product x", "Product y", "Product z"]
