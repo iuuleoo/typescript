@@ -1,31 +1,10 @@
-// Interface x Type
-
-interface IBaseProduct {
-    price: number
-}
-
-interface IProduct extends IBaseProduct {
-    id: number,
+interface Product {
+    id: number
     name: string
-}
-
-interface IProduct {
     quantity: number
 }
 
-type TBaseProduct = {
-    price: number
-}
 
-type TProduct = TBaseProduct & {
-    id: number,
-    name: string
-}
+const product1: Product = { id: 1, name: "Produto 1", quantity: 3}
 
-let product1: IProduct = { id: 1, name: "Produto 1", price: 500, quantity: 12}
-let product2: TProduct = { id: 2, name: "Produto 2", price: 550}
-
-type TypeString = string
-type TypeNumber = number
-
-interface X extends string {}
+const product2: typeof product1 = { id: 2, name: "Produto 2", quantity: 5}
