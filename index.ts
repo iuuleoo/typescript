@@ -1,19 +1,16 @@
-interface Person {
-  id: number,
-  name: string,
-}
-interface Teacher extends Person {
-  id: number,
-  name: string,
-  subjects: string[]
+type Product = {
+    id: number,
+    name: string
 }
 
-interface Student extends Person {
-  // id: number,
-  // name: string,
-  age: number,
+function newProduct(product: Product){
 }
 
-let teacher: Teacher = { id: 1, name: "a", subjects: ["Javascript", "Typescript"] }
+newProduct({ id: 1, name: "Produto x"})
 
-let student = { id: 2, name: "aa", age: 19 }
+
+type SelectResponse = Product[] | null
+
+function selectProducts(): SelectResponse {
+    return null
+}
