@@ -1,6 +1,6 @@
-// Tipagem explícita
-let myName: string
+let message
 
-// Inferência de Tipos
-let message = "Oi, tudo bem?"
-message = "Sim. Tudo ótimo!"
+// Com o tipo any a variável aceita qualquer valor.
+message = "Esse é um texto"
+message = 45
+message = true
