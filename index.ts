@@ -1,18 +1,6 @@
-// undefined
-let value: number
-value = 12
-console.log(value)
+let response: string | null | number
 
-let user = {
-  name: "Leo"
-}
+response = "Teste"
+response = null
+response = 15
 
-//console.log(user.email)
-
-// null
-let email = null
-console.log(email)
-
-if(!email){
-  console.log("Informe o e-mail!")
-}
